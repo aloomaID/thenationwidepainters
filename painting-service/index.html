@@ -1,0 +1,1241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+        <title>Expert Painting Contractors in the USA | Interior & Exterior Services | Call (877) 848-1711</title>
+        <meta name="title" content="Expert Painting Contractors in the USA | Interior & Exterior Services | Call (877) 848-1711" />
+        <meta name="robots" content="NOODP, NOYDIR, index, follow" />
+        <link rel="canonical" href="https://thenationwidepainters.pro/painting-service/" />
+        <meta name="description" content="Looking for professional painting contractors? We specialize in high-quality interior and exterior painting services across the USA. Affordable, reliable, and expert work—call (877) 848-1711 today for a free estimate!" />
+        <meta property="og:title" content="Expert Painting Contractors in the USA | Interior & Exterior Services | Call (877) 848-1711" />
+        <meta property="og:description" content="Looking for professional painting contractors? We specialize in high-quality interior and exterior painting services across the USA. Affordable, reliable, and expert work—call (877) 848-1711 today for a free estimate!" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="The Nation Wide Painters" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="../static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/aloomaspecial/alooma.css"><link rel="stylesheet" href="../static/aloomaspecial/alooma2.css"></head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="/" class="navbar-brand">
+                <h2 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Thenationwidepainters</h2>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/about-us/" class="nav-item nav-link">About Us</a>
+                    <a href="/painting-service/" class="nav-item nav-link">Our Service</a>
+                    <a href="/contact-us/" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="tel:877-848-1711" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Click Here To Call Us Now (877) 848-1711<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="../static/img/carousel-1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-l-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Transform Your Space with Trusted Painting Contractors Across the USA – TheNationwidePainters</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">At TheNationwidePainters, we provide top-tier residential and commercial painting services across all 50 states. Whether you're refreshing your home’s interior, giving your office a brand-new look, or restoring the curb appeal of your property, our expert team delivers flawless finishes—on time and on budget. With a reputation for excellence and nationwide coverage, we make it easy to bring color and life to your spaces, wherever you are in the U.S.</p>
+                                    <a href="tel:877-848-1711" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Click Here To Call Us Now (877) 848-1711</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <div id="output"></div>
+    <script>
+        
+        function getContents(selectedContents, splitInfo) {
+            let [header, paragraph] = selectedContents.split(splitInfo);
+            header = header.replace(/<br>/g, '');
+            paragraph = paragraph.replace(/<br><br>/g, '<br>');
+
+            let secondPart = '';
+            if (paragraph.includes('<list>')) {
+                let [partParagraph, listParagraph] = paragraph.split('<list>');
+                let listItems = listParagraph.replace(/<br>/g, '').replace(/\n/g, '').split('^^');
+                let appendAllList = listItems.map(item => `<li>${item}</li>`).join('');
+                secondPart = `<ul>${appendAllList}</ul>`;
+                return [header, partParagraph, secondPart];
+            }
+            return [header, paragraph, secondPart];
+        }
+
+        function cleanText(htmlContent) {
+            let result = htmlContent;
+            let regex = /{([^{}()]+)}/g;
+            result = result.replace(regex, (match, p1) => {
+                if (p1.includes('|')) {
+                    let options = p1.split('|');
+                    return options[Math.floor(Math.random() * options.length)];
+                }
+                return p1;
+            });
+            return result.replace(/{|}/g, '');
+        }
+
+        function handleTemplate(option1, option2) {
+            return Math.random() > 0.5 ? option1 : option2;
+        }
+
+        function generateContentsBody(phoneNumber, longForm, shortForm, imageList, data, siteName) {
+            data = data.replace(/&amp;/g, 'and').replace(/\n/g, '<br>').replace(/<br><br><br>/g, '<br>').trim();
+            data = cleanText(data);
+            let allReformattedBody = '';
+            let usedImage = [];
+            let sanitizedPhone = phoneNumber.replace(/\s|\(|\)|-/g, '');
+            let phoneNumberUrl = `tel:${sanitizedPhone}`;
+            let allData = data.split('$$');
+
+            let myNini = 0;
+            allData.forEach(selectedContents => {
+                selectedContents = selectedContents.trim().replace(/\n/g, '');
+                let singleTemplateChecker = '';
+                let replace_long_form= `<div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>`;
+                let replace_short_form= `<div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>`;
+                
+                if (selectedContents.includes('%%')) {
+                    let multipleChecker = selectedContents.split('%%').length;
+                    
+                    if (selectedContents.includes('<review>')) {
+                        singleTemplateChecker = '<template9>';
+                    }else if (selectedContents.includes('<faq>')) {
+                        singleTemplateChecker = '<template10>';
+                    } else if (multipleChecker === 2) {
+                        singleTemplateChecker = '<template7>';
+                    } else if (multipleChecker === 3) {
+                        singleTemplateChecker = '<template5>';
+                    }
+                } else {
+                    if (selectedContents.includes('<contact>')) {
+                        singleTemplateChecker = '<template8>';
+                    }  else {
+                        if (myNini === 0) {
+                            singleTemplateChecker = handleTemplate('<template1>', '<template4>');
+                        } else if (myNini === 2) {
+                            singleTemplateChecker = handleTemplate('<template2>', '<template3>');
+                        } else {
+                            singleTemplateChecker = '<template6>';
+                        }
+                        myNini++;
+                    }
+                }
+                
+                if (singleTemplateChecker === '<template1>' ||
+                    singleTemplateChecker === '<template2>' ||
+                    singleTemplateChecker === '<template3>' ||
+                    singleTemplateChecker === '<template4>'
+                ) {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    if (singleTemplateChecker === '<template1>'){
+                        let templateData1 = `<!-- Template 1.1 Start -->
+                        <br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template1 h2alooma">aloomaidheader</h2>
+                                    <p class="template1 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 1.1 End -->`;
+                        templateData = templateData1;
+                    }
+                    else if (singleTemplateChecker === '<template2>') {
+                        let templateData2 = `<!-- Template 2 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="ourservices">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <h2 class="template2 mx-auto">aloomaidheader </h2>
+                                <p class="template2 palooma mx-auto">aloomaidparagraph
+                                </p>
+                                <div class="col-m-8 col-l-8">
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                
+                            </div>
+                            </section>  
+                        </div>
+
+                        <!-- Template 2 End -->`;
+                        templateData = templateData2;
+                    }
+                    else if (singleTemplateChecker === '<template3>') {
+                        let templateData3 = `<!-- Template 3 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="h2alooma template3">aloomaidheader</h2>
+                                        <p class="template3 palooma">aloomaidparagraph
+                                        </p>
+                                aloomalistdata
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                
+                                        <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <!-- Template 3 End -->`;
+                        templateData = templateData3;
+                    }
+                    else if (singleTemplateChecker === '<template4>') {
+                        let templateData4 = `<!-- Template 4 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-6 col-l-6">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph
+                                        </p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                        
+                                    </div>
+                                    <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+                                </div>
+                        
+                                
+                            </section>
+                        </div>
+
+                        <!-- Template 4 End -->`;
+                        templateData = templateData4;
+                    }
+                    if (longForm.length > 3) {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(/aloomalongform/g, longForm)
+                            .replace(/aloomashortform/g, shortForm)
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    } else {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(replace_long_form, '')
+                            .replace(replace_short_form, '')
+                            .replace(/col-m-6 col-l-6/g, '')
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    }
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template5>') {
+                    
+                    let templateData = `<!-- Template 5 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="About">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">
+                                    aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 5 End -->`;
+                    let allDataSplit = selectedContents.split('%%');
+                    
+                    allDataSplit.forEach(dataSplit => {
+                        let [header, mainParagraph, secondPart] = getContents(dataSplit, '<h2>');
+                        templateData = templateData
+                            .replace(/aloomaidheader/, header)
+                            .replace(/aloomaidparagraph/, mainParagraph)
+                            .replace(/aloomalistdata/, secondPart)
+                            .replace(/aloomalongform/, longForm)
+                            .replace(/aloomashortform/, shortForm)
+                            .replace(/aloomaidphonenumberful/, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/, phoneNumberUrl);
+                    });
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template6>') {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    let templateData = `<!-- Template 6 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph</p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                    <div class="col-m-4 col-l-4">
+                                        <img style="width: 100%" class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                        <br>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 6 End -->`;
+                    let counter = 0;
+                    let pickImage;
+                    do {
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        counter++;
+                    } while (usedImage.includes(pickImage) && counter < 20);
+                    usedImage.push(pickImage);
+                    let altText = pickImage.split('.')[0];
+                    
+                    templateData = templateData.replace('aloomaidheader', header)
+                        .replace('aloomaidparagraph', mainParagraph)
+                        .replace('aloomalistdata', secondPart)
+                        .replace('aloomalongform', longForm)
+                        .replace('aloomashortform', shortForm)
+                        .replace('aloomaidphonenumberful', phoneNumber)
+                        .replace('aloomaidphonenumberurl', phoneNumberUrl)
+                        .replace('aloomaidpickimage', pickImage)
+                        .replace('aloomaidalttitle', altText);
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template7>'){
+                    let counter = 0, pickImage, pickImage1;
+                    while (counter < 20) {
+                        counter++;
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage)) break;
+                    }
+
+                    usedImage.push(pickImage);
+
+                    let counter1 = 0;
+                    while (counter1 < 20) {
+                        counter1++;
+                        pickImage1 = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage1)) break;
+                    }
+
+                    let altText = pickImage.split('.')[0];
+                    let altText1 = pickImage1.split('.')[0];
+
+                    let templateData = `<!-- template 7 -- two subtopic with a list and image-->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    <br><br>
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                    <br><br>
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>`;
+
+                    let allDataSplit = selectedContents.split("%%");
+                    
+                    allDataSplit.forEach(data => {
+                        let [ header, mainParagraph, secondPart ] = getContents(data, "<h2>");
+                        
+                        templateData = templateData
+                            .replace("aloomaidheader", header)
+                            .replace("aloomaidparagraph", mainParagraph)
+                            .replace("aloomalistdata", secondPart)
+                            .replace("aloomalongform", longForm)
+                            .replace("aloomashortform", shortForm)
+                            .replace("aloomaidphonenumberful", phoneNumber)
+                            .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                            .replace("aloomaidpickimage", pickImage)
+                            .replace("aloomaidpickimage", pickImage1)
+                            .replace("aloomaidalttitle", altText)
+                            .replace("aloomaidalttitle", altText1);
+                    });
+
+                    allReformattedBody += templateData;
+                    usedImage.push(pickImage1);
+                }
+                else if (singleTemplateChecker === "<template8>") {
+                    // Template 8: Contact template with 1 subtopic
+                    let [ header, mainParagraph, secondPart ] = getContents(selectedContents, "<h2>");
+                    let templateData = `<br><br><br><br>
+                        <div class="containeralooma" id="contact">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                    `;
+
+                    templateData = templateData
+                        .replace("aloomaidheader", header)
+                        .replace("aloomaidparagraph", mainParagraph)
+                        .replace("aloomalistdata", secondPart)
+                        .replace("aloomalongform", longForm)
+                        .replace("aloomashortform", shortForm)
+                        .replace("aloomaidphonenumberful", phoneNumber)
+                        .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                        .replace("<contact>", "");
+
+                    allReformattedBody += templateData;
+                } 
+                else if (singleTemplateChecker === "<template9>") {
+                    // Template 9: Reviews
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<br><br><br><br>
+                    <div class="col-m-4">
+                        <i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i>
+                        <p class="template4 palooma">aloomaidcomments</p>
+                        <label for="" style="float: right;">aloomaidcommenname</label>
+                    </div>`;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<!-- Reviews  -->
+                    <br><br><br><br>
+                    <div class="containeralooma" id="review">
+                        <section class="boxalooma" style="text-align: center;">
+                        <h2 class="heading-with-line template4 h2alooma">Customer Reviews</h2>
+                        <div class="row">
+                            aloomaidallcomments
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<review>", "");
+
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === "<template10>") {
+                    // Template 9: Faq
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<h4 class="template4 palooma">aloomaidcomments</h4>
+                    <p>aloomaidcommenname</p>
+                    `;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<br><br><br><br>
+                    <div class="containeralooma" id="contact">
+                        <section class="boxalooma">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="template4 h2alooma" style="margin-left: 400px;">Frequently Asked Questions in USA</h2>
+                                aloomaidallcomments
+                                
+                            </div>
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<faq>", "");
+
+                    allReformattedBody += templateData;
+                }
+                
+            });
+            
+
+            document.getElementById("output").innerHTML = allReformattedBody;
+        }
+
+        // Example usage
+        document.addEventListener("DOMContentLoaded", function() {
+            let sampleData = `Meet The Nation Wide Painters – Your Trusted Painting Pros Across the USA<h2>
+
+Nationwide Painters is a leading provider of professional painting services across the United States. With a team of experienced and skilled painters, we offer a comprehensive range of residential and commercial painting solutions tailored to meet the unique needs of our clients. Our commitment to quality workmanship and customer satisfaction is at the forefront of everything we do.
+
+From interior and exterior painting for homes to commercial projects in various industries, we pride ourselves on delivering exceptional results. With a focus on attention to detail and using high-quality materials, we ensure that every project we undertake is completed to the highest standards. Our nationwide presence allows us to serve clients in multiple cities and states, making us a reliable choice for painting contractors across the country.
+
+At Nationwide Painters, we understand that customer satisfaction is paramount. That's why we prioritize clear communication, punctuality, and a commitment to excellence throughout the entire painting process. Our goal is to exceed your expectations and leave you with a beautifully painted space that you can be proud of.
+
+$$
+
+Residential Interior Painting Services<h2>
+
+Refreshing the interior of your home with a fresh coat of paint can transform the entire atmosphere and ambiance. At Nationwide Painters, we offer comprehensive interior painting services tailored to meet your unique needs and preferences. Our team of skilled professionals will work closely with you to understand your vision and ensure a flawless execution.
+
+Painting the interior of your home offers numerous benefits beyond just aesthetic appeal. A new interior paint job can increase the value of your property, making it a worthwhile investment. Additionally, Fresh paint can enhance the overall atmosphere, reduce maintenance requirements, and even improve indoor air quality.
+
+Our interior painting services include meticulous preparation, precise application techniques, and a keen eye for detail to ensure a seamless and long-lasting finish. Whether you desire a complete color transformation or a subtle touch-up, our team will work diligently to bring your vision to life, ensuring a beautiful and inviting living space.
+
+$$
+
+Residential Exterior Painting Services<h2>
+
+Exterior painting is a crucial investment for homeowners that goes beyond just aesthetics. A fresh coat of high-quality paint can significantly enhance your home's curb appeal, making it stand out in the neighborhood and potentially increasing its value. A well-applied, high-quality paint job acts as a protective barrier, preventing moisture damage, wood rot, and even mold, all of which are common issues in Portland.
+
+At Nationwide Painters, we understand the importance of exterior painting for both curb appeal and protection. Our team of skilled professionals uses premium paints and proven techniques to ensure a long-lasting, beautiful finish that safeguards your home's siding, trim, and other exterior surfaces from the elements.
+
+Our exterior painting services include thorough preparation, meticulous attention to detail, and a seamless application process. We take the time to properly clean, repair, and prime surfaces, ensuring optimal adhesion and longevity. Whether you're looking to refresh your home's existing color or explore a new, modern palette, our experts can guide you in selecting the perfect shades that complement your home's architecture and personal style.
+
+Investing in professional exterior painting not only enhances your home's appearance but also serves as a preventative measure against costly repairs down the line. Touching up your home's exterior can not only increase your curb appeal; it can also help your home's siding be more durable and long-lasting. By protecting your home's exterior from harsh weather conditions, UV rays, and other environmental factors, you can extend the lifespan of your siding, trim, and other materials, ultimately saving you money in the long run.
+
+$$
+
+Commercial Painting Services<h2>
+
+Nationwide Painters offers comprehensive commercial painting services tailored to meet the unique needs of various commercial facilities. Our experienced team has extensive expertise in delivering high-quality interior and exterior painting solutions for healthcare facilities, such as hospitals, clinics, and medical offices.
+
+We understand that commercial painting projects require a different approach compared to residential painting, as they often involve larger spaces, specific regulations, and the need to minimize disruptions to daily operations. 
+
+Our commercial painting services cater to a wide range of facilities, including offices, retail stores, restaurants, hotels, educational institutions, and industrial sites.
+
+Whether you need a fresh coat of paint to revitalize your commercial space or a complete repainting project, our team is equipped to handle projects of any scale with professionalism and attention to detail. We work closely with our clients to understand their specific requirements, color preferences, and any unique challenges to ensure a seamless and efficient painting process.
+
+$$
+
+Wallpaper Installation and Removal Services<h2>
+
+Professional wallpaper installation and removal services can save you significant time and effort while ensuring flawless results. Attempting to install or remove wallpaper on your own can be a daunting task, often leading to frustration and unsatisfactory outcomes.
+
+Hiring professionals for wallpaper installation guarantees a seamless and precise application. Experienced installers possess the necessary skills and knowledge to handle intricate patterns, match seams perfectly, and achieve a smooth, wrinkle-free finish. Their expertise ensures that your chosen wallpaper enhances the aesthetic appeal of your space.
+
+Similarly, professional wallpaper removal services offer numerous benefits. Experienced technicians employ specialized techniques and equipment to remove even the most stubborn wallpaper without damaging the underlying surfaces. They can efficiently handle the process, minimizing the risk of accidental damage or residue left behind. 
+
+By entrusting your wallpaper installation and removal needs to professionals, you can enjoy a stress-free experience and ensure exceptional results that enhance the aesthetic appeal of your space.
+
+%%
+
+Cabinet Painting Services<h2>
+
+Refreshing the look of your kitchen or bathroom cabinets can be achieved through professional cabinet painting services. At Nationwide Painters, we offer expert cabinet painting solutions that can transform the appearance of your space without the need for costly replacements.
+
+Painting kitchen cabinets is a cost-effective alternative to replacement, as it involves less labor and material costs, making it an attractive option for those on a budget. It allows for a dramatic change in your kitchen's appearance, offering a wide range of cabinet colors and finishes to suit any style.
+
+Our skilled painters meticulously prepare the cabinet surfaces, ensuring proper adhesion and a smooth, long-lasting finish. We use high-quality paints and finishes that are durable and easy to clean, ensuring your cabinets maintain their fresh, updated look for years to come. Cabinet painting is an excellent way to revitalize the heart of your home without the hassle and expense of a full cabinet replacement.
+
+$$
+
+Popcorn Ceiling Removal Services<h2>
+
+Popcorn ceilings, also known as acoustic ceilings, were a popular trend in home construction from the 1950s to the 1980s. However, these textured ceilings have fallen out of favor due to their outdated appearance and potential health hazards. At Nationwide Painters, we offer professional popcorn ceiling removal services to help homeowners modernize their living spaces.
+
+The popcorn ceiling removal process involves carefully scraping off the textured material, repairing any damage to the underlying surface, and then applying a smooth finish. This process requires specialized equipment and expertise to ensure a safe and effective removal without compromising the structural integrity of the ceiling.
+
+Removing popcorn ceilings offers several benefits, including:<list>
+
+Increased Home Value: Removing popcorn ceilings can significantly increase a home's value by giving it a more modern and appealing look.^^
+
+Improved Indoor Air Quality: Popcorn ceilings installed before the 1980s may contain asbestos, which can be hazardous if disturbed. Removing these ceilings can eliminate this potential health risk and improve indoor air quality.^^
+
+Enhanced Lighting: Smooth ceilings reflect light better than textured surfaces, creating a brighter and more inviting living space.^^
+
+Easier Maintenance: Popcorn ceilings are notoriously difficult to clean and maintain, as they tend to trap dust and cobwebs. Smooth ceilings are much easier to keep clean and maintain.
+
+$$
+
+Eco-Friendly Painting Options<h2>
+
+At Nationwide Painters, we understand the importance of protecting the environment and prioritizing sustainability in our operations. That's why we offer eco-friendly painting options, utilizing low-VOC (volatile organic compound) and zero-VOC paints that are better for the planet and your health.
+
+Low-VOC paints are formulated to minimize the release of harmful volatile organic compounds into the air, reducing indoor air pollution and potential health risks. These paints are not only environmentally friendly but also offer excellent coverage, vibrant colors, and long-lasting finishes comparable to traditional paints.
+
+At Nationwide Painters, we are committed to offering sustainable solutions that protect both your health and the environment. Our team of experts can guide you through the eco-friendly painting options available and help you make an informed decision for your residential or commercial project.
+
+Using eco-friendly paints comes with numerous benefits, including:<list>
+
+Improved Indoor Air Quality: Low-VOC paints emit fewer harmful chemicals, ensuring better air quality and a healthier living or working environment.^^
+
+Reduced Environmental Impact: These paints contribute to reducing air pollution and minimizing the release of volatile organic compounds into the atmosphere.^^
+
+Cost-Effectiveness: Eco-friendly paints are designed to outlast traditional paints, requiring less frequent repainting and saving you money in the long run.^^
+
+$$
+
+Expertise and Experience of Nationwide Painters<h2>
+
+At Nationwide Painters, we take pride in our team's extensive expertise and years of experience in the painting industry. Our skilled professionals have honed their craft through countless residential and commercial projects, ensuring they possess the knowledge and techniques necessary to deliver exceptional results.
+
+By hiring a reputable and experienced professional painter, you won't have to worry. They'll give you a quality finish in less time and with less hassle. Our team understands the intricacies of surface preparation, paint application techniques, and color selection, allowing us to tackle even the most challenging projects with ease.
+
+With decades of combined experience, our painters have encountered and overcome a wide range of painting challenges, enabling them to anticipate and address potential issues before they arise. Their expertise extends beyond merely applying paint; they possess a deep understanding of the science behind paint, surface materials, and environmental factors that can impact the longevity and appearance of a paint job.
+
+$$
+
+Quality and Reliability of Our Services<h2>
+
+At Nationwide Painters, we are committed to delivering high-quality workmanship and reliable service on every project. We understand that your home or business is a significant investment, and you deserve nothing but the best. Our team of skilled professionals uses only premium paints and materials from reputable brands, ensuring long-lasting and visually appealing results.
+
+We pride ourselves on our attention to detail and meticulous preparation processes, which include thorough surface cleaning, sanding, and priming. This attention to detail guarantees a smooth, even finish that will stand the test of time. Additionally, we employ industry-best practices and techniques to ensure a flawless application every time.
+
+Our commitment to quality extends beyond the painting process itself. We are licensed, bonded, and insured, providing you with peace of mind and protection throughout the project. Licensed, Bonded, and Insured Painters for Home and Business is essential for your safety and the protection of your property.
+
+At Nationwide Painters, reliability is at the core of our operations. We understand the importance of completing projects on time and within budget, minimizing disruptions to your daily routine. Our team communicates clearly and #BE9B2Aly throughout the process, ensuring you are informed every step of the way.
+
+$$
+
+Customer Satisfaction: Our Top Priority<h2>
+
+At Nationwide Painters, customer satisfaction is our top priority. We understand that a painting project can be a significant investment, and we strive to exceed our clients' expectations with every job we undertake. Our commitment to quality workmanship, reliable service, and open communication ensures that our customers are delighted with the final results.
+
+We take pride in consistently delivering outstanding painting services that meet or exceed industry standards. Our mission is to create great-looking, long-lasting paint jobs by consistently exceeding established painting industry quality standards, and providing exceptional customer service. This dedication to excellence has earned us numerous positive reviews and a reputation for delivering exceptional customer satisfaction.
+
+By prioritizing customer satisfaction, we not only ensure a positive experience during the project but also foster long-lasting relationships with our clients. Satisfied customers are more likely to return for future painting needs and recommend our services to others, Customer satisfaction is a crucial indicator of a customer's likelihood to return and recommend the business to others, reflecting the quality and value perceived.
+
+$$
+
+Comprehensive Painting Services<h2>
+
+At Nationwide Painters, we take pride in offering a comprehensive range of painting services to meet the diverse needs of our residential and commercial clients. From interior and exterior painting to specialized services like wallpaper installation, cabinet refinishing, and popcorn ceiling removal, our team has the expertise and experience to handle any painting project with precision and professionalism.
+
+Our interior painting services encompass everything from living rooms and bedrooms to kitchens, bathrooms, and hallways, ensuring a fresh and inviting atmosphere throughout your home. For exterior painting, we meticulously prepare and paint siding, trim, doors, and other surfaces, enhancing your property's curb appeal and protecting it from the elements.
+
+In addition to traditional painting services, we offer eco-friendly painting options, allowing you to create a beautiful and environmentally conscious space. Our team stays up-to-date with the latest advancements in low-VOC and non-toxic paints, ensuring a healthier indoor environment for you and your family.
+
+Whether you're looking to revitalize your home's interior, refresh your commercial space, or embark on a complete property transformation, Nationwide Painters has the comprehensive services and expertise to bring your vision to life. We offer numerous advantages, including cost savings, quality work, reliability, professionalism, experience, specialization, flexibility, and more.
+
+$$
+
+<review>
+
+I was initially hesitant about hiring a painting contractor, but Nationwide Painters exceeded my expectations. Their team was professional, efficient, and paid attention to every detail. The end result was a beautifully painted home that looks brand new."<h2>
+
+ — Jessica M., Los Angeles, CA%%
+
+"I cannot recommend Nationwide Painters enough. They transformed my office space into a vibrant and welcoming environment. The crew was courteous, punctual, and left the premises spotless upon completion. Their attention to customer service is truly remarkable."<h2>
+
+ — Carlos R., Miami, FL%%
+
+"Nationwide Painters made the process of updating our home's interior seamless and stress-free. Their team provided valuable guidance on color selection and surface preparation, and the final result exceeded our expectations. We highly recommend their services."<h2>
+
+ — Emily T., Chicago, IL
+
+$$
+
+<contact>Get a Free Estimate and Consultation<h2>
+
+At Nationwide Painters, we understand that every painting project is unique, and that's why we offer free estimates and consultations. Our team of experts will take the time to understand your specific needs, whether it's for a residential or commercial painting job. We'll assess the scope of work, discuss your preferences, and provide you with a detailed estimate that outlines the costs and timeline.
+
+To get started, simply give us a call or fill out our online contact form. One of our friendly representatives will get in touch with you to schedule a convenient time for an on-site consultation. During this consultation, we'll answer any questions you may have and provide you with a comprehensive estimate, free of charge and without any obligation.
+
+We believe in transparency and open communication throughout the entire process. By offering free estimates and consultations, we provide an opportunity for you to experience our professionalism and quality firsthand, before making any commitments. 
+
+Don't hesitate to take the first step towards a successful painting project. Contact us today and let us show you why Nationwide Painters is the premier choice for all your painting needs.
+
+
+
+`;
+            let dataList = sampleData.includes('@@@') 
+                ? sampleData.split('@@@').map(item => item.trim()) 
+                : [sampleData.trim()];
+
+            // Pick one at random
+            let selectedData = dataList[Math.floor(Math.random() * dataList.length)];
+            generateContentsBody(`(877) 848-1711`, `<iframe src="//leads.leadsmartinc.com/?api_key=eccf565586cda416df8b89f66df641fee9a1bcb8&affiliate_source=abdulrhnmidrs1&funnel=4&category=197&step=1&buttons=btn-success" width="600" height="545" frameborder="0"></iframe>`, `<div id="polyares_form_container" style="margin:0px;padding:0px;"><div id="polyares_form" style="width: 244px; height: 377px;"><iframe src="//leads.leadsmartinc.com/?api_key=eccf565586cda416df8b89f66df641fee9a1bcb8&affiliate_source=abdulrhnmidrs1&funnel=5&category=197&buttons=btn-success" height="100%" width="100%" frameborder="no" scrolling="yes" noresize="true" vspace="0" hspace="0" style="border-radius: 10px; border: 1px solid #333;"></iframe></div></div>`, ['static/images/long painting.jpg', 'static/images/window paint.jpg', 'static/images/happy customer painted apartment.jpg', 'static/images/tower painting.jpg', 'static/images/female painter.jpg', 'static/images/roller painter.jpg', 'static/images/man painter.jpg', 'static/images/painter paining a wall.jpg', 'static/images/man painter at work.jpg', 'static/images/painter.jpg', 'static/images/painter at work.jpg', 'static/images/painted apartment.jpg', 'static/images/family indoor painting.jpg', 'static/images/indoor painting.jpg', 'static/images/man painting.jpg', ''], selectedData, `thenationwidepainters.pro`);
+        });
+
+    </script>
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: #BE9B2A; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">States In USA</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ny/" id="aloomafotter">New York</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ca/" id="aloomafotter">California</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-il/" id="aloomafotter">Illinois</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-fl/" id="aloomafotter">Florida</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-tx/" id="aloomafotter">Texas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-pa/" id="aloomafotter">Pennsylvania</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ga/" id="aloomafotter">Georgia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-dc/" id="aloomafotter">District Of Columbia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ma/" id="aloomafotter">Massachusetts</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-az/" id="aloomafotter">Arizona</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mi/" id="aloomafotter">Michigan</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-wa/" id="aloomafotter">Washington</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mn/" id="aloomafotter">Minnesota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-co/" id="aloomafotter">Colorado</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-md/" id="aloomafotter">Maryland</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nv/" id="aloomafotter">Nevada</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mo/" id="aloomafotter">Missouri</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-or/" id="aloomafotter">Oregon</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-oh/" id="aloomafotter">Ohio</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-in/" id="aloomafotter">Indiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nc/" id="aloomafotter">North Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-va/" id="aloomafotter">Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-wi/" id="aloomafotter">Wisconsin</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ri/" id="aloomafotter">Rhode Island</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ut/" id="aloomafotter">Utah</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-tn/" id="aloomafotter">Tennessee</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ky/" id="aloomafotter">Kentucky</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ok/" id="aloomafotter">Oklahoma</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ct/" id="aloomafotter">Connecticut</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-la/" id="aloomafotter">Louisiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-hi/" id="aloomafotter">Hawaii</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ne/" id="aloomafotter">Nebraska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nm/" id="aloomafotter">New Mexico</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-al/" id="aloomafotter">Alabama</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-sc/" id="aloomafotter">South Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ia/" id="aloomafotter">Iowa</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ks/" id="aloomafotter">Kansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ar/" id="aloomafotter">Arkansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-id/" id="aloomafotter">Idaho</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ms/" id="aloomafotter">Mississippi</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nj/" id="aloomafotter">New Jersey</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ak/" id="aloomafotter">Alaska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nh/" id="aloomafotter">New Hampshire</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-me/" id="aloomafotter">Maine</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nd/" id="aloomafotter">North Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-wv/" id="aloomafotter">West Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-sd/" id="aloomafotter">South Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-de/" id="aloomafotter">Delaware</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mt/" id="aloomafotter">Montana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-vt/" id="aloomafotter">Vermont</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-wy/" id="aloomafotter">Wyoming</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: #BE9B2A; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">Most popular cities we serve</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-washington-dc/" id="aloomafotter">Washington</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-beavercreek-oh/" id="aloomafotter">Beavercreek</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-aetna-estates-co/" id="aloomafotter">Aetna Estates</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-attica-in/" id="aloomafotter">Attica</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-graham-tx/" id="aloomafotter">Graham</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-north-tonawanda-ny/" id="aloomafotter">North Tonawanda</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-lake-worth-tx/" id="aloomafotter">Lake Worth</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-wauconda-il/" id="aloomafotter">Wauconda</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-charlotte-tn/" id="aloomafotter">Charlotte</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-pottsboro-tx/" id="aloomafotter">Pottsboro</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-colonial-pine-hills-sd/" id="aloomafotter">Colonial Pine Hills</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-waterflow-nm/" id="aloomafotter">Waterflow</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-laguna-heights-tx/" id="aloomafotter">Laguna Heights</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ashland-va/" id="aloomafotter">Ashland</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-east-kapolei-hi/" id="aloomafotter">East Kapolei</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-gallitzin-pa/" id="aloomafotter">Gallitzin</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-salix-pa/" id="aloomafotter">Salix</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-federal-way-wa/" id="aloomafotter">Federal Way</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mill-hall-pa/" id="aloomafotter">Mill Hall</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-nevada-city-ca/" id="aloomafotter">Nevada City</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-donaldsonville-la/" id="aloomafotter">Donaldsonville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-fairview-shores-fl/" id="aloomafotter">Fairview Shores</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-apple-valley-mn/" id="aloomafotter">Apple Valley</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-navarre-oh/" id="aloomafotter">Navarre</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-lordstown-oh/" id="aloomafotter">Lordstown</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-cave-city-ky/" id="aloomafotter">Cave City</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-hampstead-md/" id="aloomafotter">Hampstead</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-pittsburg-ca/" id="aloomafotter">Pittsburg</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-bellevue-wi/" id="aloomafotter">Bellevue</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-west-lake-hills-tx/" id="aloomafotter">West Lake Hills</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-grant-valkaria-fl/" id="aloomafotter">Grant-Valkaria</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-demarest-nj/" id="aloomafotter">Demarest</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-seminole-tx/" id="aloomafotter">Seminole</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-floris-va/" id="aloomafotter">Floris</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-garrochales-pr/" id="aloomafotter">Garrochales</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-somersworth-nh/" id="aloomafotter">Somersworth</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-country-club-hills-mo/" id="aloomafotter">Country Club Hills</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-forreston-il/" id="aloomafotter">Forreston</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-elysburg-pa/" id="aloomafotter">Elysburg</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mason-neck-va/" id="aloomafotter">Mason Neck</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-basalt-co/" id="aloomafotter">Basalt</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-catalina-az/" id="aloomafotter">Catalina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-patrick-springs-va/" id="aloomafotter">Patrick Springs</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-glassmanor-md/" id="aloomafotter">Glassmanor</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-crestwood-mo/" id="aloomafotter">Crestwood</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-paducah-tx/" id="aloomafotter">Paducah</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-colonial-park-pa/" id="aloomafotter">Colonial Park</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-mccom-ms/" id="aloomafotter">Mccomb</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-north-judson-in/" id="aloomafotter">North Judson</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/painting-service-ronan-mt/" id="aloomafotter">Ronan</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-l-3 col-m-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(877) 848-1711</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@thenationwidepainters.pro</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-l-3 col-m-6">
+                        
+                        
+                    </div>
+                    <div class="col-l-3 col-m-6">
+                        
+                    </div>
+                    <div class="col-l-3 col-m-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="/about-us/">About Us</a>
+                        <a class="btn btn-link text-white-50" href="/contact-us/">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="/painting-service/">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-m-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#"></a>
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							 <a class="border-bottom" href=""></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/easing/easing.min.js"></script>
+    <script src="../static/lib/waypoints/waypoints.min.js"></script>
+    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../static/js/main.js"></script>
+<script src="https://kit.fontawesome.com/c4c9a6665b.js" crossorigin="anonymous"></script></body>
+
+</html>
